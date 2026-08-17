@@ -1,0 +1,27 @@
+{
+  "name": "tree-sitter-lean",
+  "version": "0.1.0",
+  "description": "A flat, lexical tree-sitter grammar for Lean 4, mirroring the official vscode-lean4 TextMate grammar",
+  "license": "MIT",
+  "keywords": ["parser", "lean", "tree-sitter"],
+  "files": [
+    "grammar.js",
+    "src",
+    "queries"
+  ],
+  "devDependencies": {
+    "tree-sitter-cli": "^0.26.0"
+  },
+  "scripts": {
+    "generate": "tree-sitter generate",
+    "test": "tree-sitter test",
+    "parse": "tree-sitter parse"
+  },
+  "tree-sitter": [
+    {
+      "scope": "source.lean",
+      "file-types": ["lean"],
+      "highlights": "queries/highlights.scm"
+    }
+  ]
+}

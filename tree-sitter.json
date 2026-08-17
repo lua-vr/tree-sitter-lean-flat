@@ -1,0 +1,26 @@
+{
+  "grammars": [
+    {
+      "name": "lean",
+      "camelcase": "Lean",
+      "scope": "source.lean",
+      "path": ".",
+      "file-types": ["lean"],
+      "highlights": "queries/highlights.scm",
+      "injection-regex": "lean"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "A flat, lexical tree-sitter grammar for Lean 4, mirroring the official vscode-lean4 TextMate grammar"
+  },
+  "bindings": {
+    "c": true,
+    "go": false,
+    "node": false,
+    "python": false,
+    "rust": false,
+    "swift": false
+  }
+}

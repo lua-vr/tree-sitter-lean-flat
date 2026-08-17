@@ -1,0 +1,73 @@
+================================================================================
+line comment
+================================================================================
+
+-- a line comment
+def x := 1
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (line_comment)
+  (keyword)
+  (identifier)
+  (punctuation)
+  (punctuation)
+  (number))
+
+================================================================================
+nested block comment
+================================================================================
+
+/- outer /- inner -/ still outer -/
+def x := 1
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (block_comment
+    (block_comment))
+  (keyword)
+  (identifier)
+  (punctuation)
+  (punctuation)
+  (number))
+
+================================================================================
+doc comment containing a nested block comment
+================================================================================
+
+/-- A doc comment for `foo`.
+Nested: /- inner block -/ still inside.
+-/
+def foo : Nat := 1
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (doc_comment
+    (block_comment))
+  (keyword)
+  (identifier)
+  (punctuation)
+  (identifier)
+  (punctuation)
+  (punctuation)
+  (number))
+
+================================================================================
+module doc comment
+================================================================================
+
+/-!
+# Module doc
+This is a module doc comment.
+-/
+import Init
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (mod_doc_comment)
+  (keyword)
+  (identifier))

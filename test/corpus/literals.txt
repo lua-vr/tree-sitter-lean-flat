@@ -1,0 +1,132 @@
+================================================================================
+plain and interpolated strings
+================================================================================
+
+def s1 : String := "plain string"
+def s2 : String := s!"value = {x + 1}"
+def s3 : String := m!"msg {h}"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (keyword)
+  (identifier)
+  (punctuation)
+  (identifier)
+  (punctuation)
+  (punctuation)
+  (string)
+  (keyword)
+  (identifier)
+  (punctuation)
+  (identifier)
+  (punctuation)
+  (punctuation)
+  (string)
+  (keyword)
+  (identifier)
+  (punctuation)
+  (identifier)
+  (punctuation)
+  (punctuation)
+  (string))
+
+================================================================================
+char literals
+================================================================================
+
+def c : Char := 'a'
+def nl : Char := '\n'
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (keyword)
+  (identifier)
+  (punctuation)
+  (identifier)
+  (punctuation)
+  (punctuation)
+  (char)
+  (keyword)
+  (identifier)
+  (punctuation)
+  (identifier)
+  (punctuation)
+  (punctuation)
+  (char))
+
+================================================================================
+numbers
+================================================================================
+
+def pi : Float := 3.14159
+def hex : Nat := 0xFF
+def n : Nat := 42
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (keyword)
+  (identifier)
+  (punctuation)
+  (identifier)
+  (punctuation)
+  (punctuation)
+  (number)
+  (keyword)
+  (identifier)
+  (punctuation)
+  (identifier)
+  (punctuation)
+  (punctuation)
+  (number)
+  (keyword)
+  (identifier)
+  (punctuation)
+  (identifier)
+  (punctuation)
+  (punctuation)
+  (number))
+
+================================================================================
+identifiers with primes
+================================================================================
+
+theorem t (x' h'' : Nat) : x' = x' := rfl
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (keyword)
+  (identifier)
+  (punctuation)
+  (identifier)
+  (identifier)
+  (punctuation)
+  (identifier)
+  (punctuation)
+  (punctuation)
+  (identifier)
+  (punctuation)
+  (identifier)
+  (punctuation)
+  (punctuation)
+  (identifier))
+
+================================================================================
+guillemet quoted identifier
+================================================================================
+
+def «my identifier» : Nat := 42
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (keyword)
+  (identifier)
+  (punctuation)
+  (identifier)
+  (punctuation)
+  (punctuation)
+  (number))

@@ -1,0 +1,94 @@
+================================================================================
+simple def
+================================================================================
+
+def foo : Nat := 1
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (keyword)
+  (identifier)
+  (punctuation)
+  (identifier)
+  (punctuation)
+  (punctuation)
+  (number))
+
+================================================================================
+theorem with modifiers and attribute
+================================================================================
+
+@[simp] private theorem foo_zero : foo 0 = 0 := rfl
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (attribute)
+  (modifier)
+  (keyword)
+  (identifier)
+  (punctuation)
+  (identifier)
+  (number)
+  (punctuation)
+  (number)
+  (punctuation)
+  (punctuation)
+  (identifier))
+
+================================================================================
+attribute directive
+================================================================================
+
+attribute [instance] MyClass
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (attribute)
+  (identifier))
+
+================================================================================
+noncomputable def with storage type
+================================================================================
+
+noncomputable def bar := Type 5
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (modifier)
+  (keyword)
+  (identifier)
+  (punctuation)
+  (punctuation)
+  (storage_type)
+  (number))
+
+================================================================================
+dotted declaration name and reference
+================================================================================
+
+theorem Nat.double_eq (n : Nat) : Nat.double n = n + n := rfl
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (keyword)
+  (identifier)
+  (punctuation)
+  (identifier)
+  (punctuation)
+  (identifier)
+  (punctuation)
+  (punctuation)
+  (identifier)
+  (identifier)
+  (punctuation)
+  (identifier)
+  (punctuation)
+  (identifier)
+  (punctuation)
+  (punctuation)
+  (identifier))
