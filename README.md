@@ -6,4 +6,4 @@ Lean has extensible grammar and is meant to be used with semantic tokens. For pr
 
 For a failed attempt at doing the grammar "right", including a whitespace-sensitive `C` scanner, see [tree-sitter-lean-fail](https://github.com/lua-vr/tree-sitter-lean-fail). I learned a couple of things from it, some of which are incorporated here. 
 
-The other tree-sitter grammars on GitHub fail quite terribly in Mathlib files with notation. Try to add too much structure, and the extensible context-sensitive syntax will bite you in the back.
+The other tree-sitter Lean grammars that I'm aware fail quite terribly in Mathlib files with notation. Try to add too much structure, and the extensible context-sensitive syntax will bite you in the back.
