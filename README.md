@@ -2,7 +2,7 @@
 
 A mostly flat tree-sitter grammar for Lean 4, vibe-coded from previous expertise and the TextMate grammar from the official extension. 
 
-Lean has extensible grammar and is meant to be used with semantic tokens. For proper highliting, please use this in conjunction with it! I wrote semantic token support for Eglot (Emacs' official LSP client) [here](https://github.com/lua-vr/eglot-semtok) which is now upstream.
+Lean has extensible grammar and is meant to be used with semantic tokens. For proper highliting, please use this in conjunction with it! I wrote semantic token support for Eglot (Emacs' official LSP client) [here](https://github.com/lua-vr/eglot-semtok) which is now upstream. You can use it in Emacs with my [personal-use mode](https://github.com/lua-vr/lean-ts-mode) (so don't use it).
 
 For a failed manual attempt at doing the grammar "right", including a whitespace-sensitive `C` scanner, see [tree-sitter-lean-fail](https://github.com/lua-vr/tree-sitter-lean-fail). I learned a couple of things from it, some of which are incorporated here. 
 
